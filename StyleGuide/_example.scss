@@ -1,0 +1,129 @@
+.example {
+    display: grid;
+    grid-gap: 1rem;
+    grid-auto-rows: minmax(200px, auto);
+}
+
+.output {
+    @include flex(column, space-evenly, center);
+    font-size: $body;
+}
+
+.input {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1rem;
+    justify-content: center;
+}
+
+//Color Sets --------------------------------------------------
+
+//Background Colors --------------------------------------------------
+
+.base-1 {
+    background-color: $base;
+}
+
+.base-2 {
+    background-color: $base2;
+}
+
+.base-3 {
+    background-color: $base3;
+}
+
+.base-4 {
+    background-color: $base4;
+}
+
+.base-primary {
+    background-color: $primary;
+}
+
+.base-secondary {
+    background-color: $secondary;
+}
+
+//Font Colors --------------------------------------------------
+
+.primary {
+    color: $regular;
+}
+
+.secondary {
+    color: $secondary;
+}
+
+.tertiary {
+    color: $tertiary;
+}
+
+.onprimary {
+    color: $onprimary;
+}
+
+.onsecondary {
+    color: $onsecondary;
+}
+
+.onbackground {
+    color: $onbackground;
+}
+
+.button {
+    color: $button;
+    .disabled {
+        color: $disabled;
+    }
+    :hover {
+        color: $onhover;
+    }
+}
+
+//Sizes --------------------------------------------------
+
+.header-1 {
+    font-size: $header1;
+}
+
+.header-2 {
+    font-size: $header2;
+}
+
+.header-3 {
+    font-size: $header3;
+}
+
+.header-4 {
+    font-size: $header4;
+}
+
+.body {
+    font-size: $body;
+}
+
+.small {
+    font-size: $small;
+}
+
+//height --------------------------------------------------
+
+.elevate-1 {
+    box-shadow: $elevation-1;
+}
+
+.elevate-2 {
+    box-shadow: $elevation-2;
+}
+
+.elevate-3 {
+    box-shadow: $elevation-3;
+}
+
+.elevate-4 {
+    box-shadow: $elevation-4;
+}
+
+.elevate-5 {
+    box-shadow: $elevation-5;
+}

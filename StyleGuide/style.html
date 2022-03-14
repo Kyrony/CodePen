@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/vue@3"></script>
+    <title>Document</title>
+</head>
+<body>
+
+    <section id="app" class="example">
+        <div class="output" :class="[currentHeight, currentBackground]">
+            <div :class="[currentSize, currentColor]"> Current Style </div>
+        </div>
+            <div class="output">
+                This is an interactive style guide for converting Figma Style Sheets into Sass/CSS.
+                <br>
+                <br>
+                Choose some options below to checkout some styles!
+            </div>
+        </div>
+
+        <div class="input">
+            <div>
+                <h3>Background-Colors</h3>
+                <p v-for="background in backgrounds"
+                @click="changeBackground(background)" >
+                {{ background }}
+                </p>
+            </div>
+            <div>
+                <h3>Font-Sizes</h3>
+                <p v-for="size in sizes"
+                @click="changeSize(size)"> 
+                {{ size }} 
+                </p>
+            </div>
+            <div>
+                <h3>Font-Colors</h3>
+                <p v-for="color in colors"
+                @click="changeColor(color)">
+                {{ color }}
+                </p>
+            </div>
+            <div>
+                <h3>Background-Elevation</h3>
+                <p  v-for="height in heights"
+                @click="changeHeight(height)">
+                {{ height }}
+                </p>
+            </div>
+        </div>
+    </section>
+    
+    <script src="/StyleGuide/main.js"></script>
+
+    <script>
+        const mountedApp = app.mount('#app')
+    </script>
+
+</body>
+</html>
