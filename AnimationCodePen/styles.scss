@@ -1,0 +1,31 @@
+
+
+.sprite {
+    position: fixed;
+    bottom: 300px;
+    left: 200px;
+    animation-name: orbit, launch;
+    animation-duration: 25s, 5s;
+    animation-iteration-count: infinite, 1;
+    animation-timing-function: ease-in, ease-in-out;
+    animation-delay: 4s, 0s;
+    z-index: 3;
+}
+
+@keyframes launch {
+  0% {
+    transform: translate(-100px, 400px);
+  }
+  100% {
+    transform: translate(0px, 0px);
+  }
+}
+
+@keyframes orbit {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(-360deg);
+    }
+}

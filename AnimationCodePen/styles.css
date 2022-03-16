@@ -1,0 +1,61 @@
+.sprite {
+  position: fixed;
+  bottom: 300px;
+  left: 200px;
+  -webkit-animation-name: orbit, launch;
+          animation-name: orbit, launch;
+  -webkit-animation-duration: 25s, 5s;
+          animation-duration: 25s, 5s;
+  -webkit-animation-iteration-count: infinite, 1;
+          animation-iteration-count: infinite, 1;
+  -webkit-animation-timing-function: ease-in, ease-in-out;
+          animation-timing-function: ease-in, ease-in-out;
+  -webkit-animation-delay: 4s, 0s;
+          animation-delay: 4s, 0s;
+  z-index: 3;
+}
+
+@-webkit-keyframes launch {
+  0% {
+    -webkit-transform: translate(-100px, 400px);
+            transform: translate(-100px, 400px);
+  }
+  100% {
+    -webkit-transform: translate(0px, 0px);
+            transform: translate(0px, 0px);
+  }
+}
+
+@keyframes launch {
+  0% {
+    -webkit-transform: translate(-100px, 400px);
+            transform: translate(-100px, 400px);
+  }
+  100% {
+    -webkit-transform: translate(0px, 0px);
+            transform: translate(0px, 0px);
+  }
+}
+
+@-webkit-keyframes orbit {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(-360deg);
+            transform: rotate(-360deg);
+  }
+}
+
+@keyframes orbit {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(-360deg);
+            transform: rotate(-360deg);
+  }
+}
+/*# sourceMappingURL=styles.css.map */
