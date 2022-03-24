@@ -1,0 +1,66 @@
+body {
+    margin: 0 ;
+    height: 100vh ;
+    display: flex ;
+    align-items: center;
+    justify-content: center; 
+    background-color: #1b1122;
+}
+
+.green {
+    background-color: #00ff00;
+}
+
+.blue {
+    background-color:  #0000ff;
+}
+
+.pink {
+    background-color:  #ff00ff;
+}
+
+.yellow {
+    background-color:  #ffff00;
+}
+
+.brown {
+    background-color:  #a52a2a;
+}
+
+
+.container {
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    gap: 2vh;
+}
+
+.menu {
+    width: 16vh;
+    height: 12vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border-radius: 20px;
+}
+
+.menu-items {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-text {
+    display: none;
+    z-index: 3;
+}
+
+.menu-text:hover {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
